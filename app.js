@@ -46,6 +46,9 @@ app.use(express.static('./public'));
 
 app.get('/', (request, response) => response.render('index'));
 
+
+
+
 app.post('/upload', (request, response) => {
 	upload(request, response, (error) => {
 		if(error){
